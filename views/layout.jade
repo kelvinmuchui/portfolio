@@ -1,13 +1,5 @@
 doctype html
 html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    block content
-      
-      doctype html
-      html(lang='en')
         head
           meta(charset='utf-8')
           meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
@@ -15,13 +7,13 @@ html
           meta(name='author', content='')
           title Freelancer - Start Bootstrap Theme
           // Bootstrap core CSS
-          link(href='vendor/bootstrap/css/bootstrap.min.css', rel='stylesheet')
+          link(href='stylesheets/bootstrap.min.css', rel='stylesheet')
           // Custom fonts for this template
-          link(href='vendor/font-awesome/css/font-awesome.min.css', rel='stylesheet', type='text/css')
+          link(href='publuc/font-awesome/css/font-awesome.min.css', rel='stylesheet', type='text/css')
           link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
           link(href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic', rel='stylesheet', type='text/css')
           // Custom styles for this template
-          link(href='css/freelancer.min.css', rel='stylesheet')
+          link(href='stylesheets/freelancer.min.css', rel='stylesheet')
         body#page-top
           // Navigation
           nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top
@@ -46,48 +38,7 @@ html
                 span.name Start Bootstrap
                 hr.star-light
                 span.skills Web Developer - Graphic Artist - User Experience Designer
-          // Portfolio Grid Section
-          section#portfolio
-            .container
-              h2.text-center Portfolio
-              hr.star-primary
-              .row
-                .col-sm-4.portfolio-item
-                  a.portfolio-link(href='#portfolioModal1', data-toggle='modal')
-                    .caption
-                      .caption-content
-                        i.fa.fa-search-plus.fa-3x
-                    img.img-fluid(src='img/portfolio/cabin.png', alt='')
-                .col-sm-4.portfolio-item
-                  a.portfolio-link(href='#portfolioModal2', data-toggle='modal')
-                    .caption
-                      .caption-content
-                        i.fa.fa-search-plus.fa-3x
-                    img.img-fluid(src='img/portfolio/cake.png', alt='')
-                .col-sm-4.portfolio-item
-                  a.portfolio-link(href='#portfolioModal3', data-toggle='modal')
-                    .caption
-                      .caption-content
-                        i.fa.fa-search-plus.fa-3x
-                    img.img-fluid(src='img/portfolio/circus.png', alt='')
-                .col-sm-4.portfolio-item
-                  a.portfolio-link(href='#portfolioModal4', data-toggle='modal')
-                    .caption
-                      .caption-content
-                        i.fa.fa-search-plus.fa-3x
-                    img.img-fluid(src='img/portfolio/game.png', alt='')
-                .col-sm-4.portfolio-item
-                  a.portfolio-link(href='#portfolioModal5', data-toggle='modal')
-                    .caption
-                      .caption-content
-                        i.fa.fa-search-plus.fa-3x
-                    img.img-fluid(src='img/portfolio/safe.png', alt='')
-                .col-sm-4.portfolio-item
-                  a.portfolio-link(href='#portfolioModal6', data-toggle='modal')
-                    .caption
-                      .caption-content
-                        i.fa.fa-search-plus.fa-3x
-                    img.img-fluid(src='img/portfolio/submarine.png', alt='')
+block content
           // About Section
           section#about.success
             .container
@@ -182,213 +133,14 @@ html
           .scroll-top.d-lg-none
             a.btn.btn-primary.js-scroll-trigger(href='#page-top')
               i.fa.fa-chevron-up
-          // Portfolio Modals
-          #portfolioModal1.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
-            .modal-dialog(role='document')
-              .modal-content
-                .close-modal(data-dismiss='modal')
-                  .lr
-                    .rl
-                .container
-                  .row
-                    .col-lg-8.mx-auto
-                      .modal-body
-                        h2 Project Title
-                        hr.star-primary
-                        img.img-fluid.img-centered(src='img/portfolio/cabin.png', alt='')
-                        p
-                          | Use this area of the page to describe your project. The icon above is part of a free icon set by
-                          a(href='https://sellfy.com/p/8Q9P/jV3VZ/') Flat Icons
-                          | . On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!
-                        ul.list-inline.item-details
-                          li
-                            | Client:
-                            strong
-                              a(href='http://startbootstrap.com') Start Bootstrap
-                          li
-                            | Date:
-                            strong
-                              a(href='http://startbootstrap.com') April 2014
-                          li
-                            | Service:
-                            strong
-                              a(href='http://startbootstrap.com') Web Development
-                        button.btn.btn-success(type='button', data-dismiss='modal')
-                          i.fa.fa-times
-                          |                     Close
-          #portfolioModal2.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
-            .modal-dialog(role='document')
-              .modal-content
-                .close-modal(data-dismiss='modal')
-                  .lr
-                    .rl
-                .container
-                  .row
-                    .col-lg-8.mx-auto
-                      .modal-body
-                        h2 Project Title
-                        hr.star-primary
-                        img.img-fluid.img-centered(src='img/portfolio/cake.png', alt='')
-                        p
-                          | Use this area of the page to describe your project. The icon above is part of a free icon set by
-                          a(href='https://sellfy.com/p/8Q9P/jV3VZ/') Flat Icons
-                          | . On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!
-                        ul.list-inline.item-details
-                          li
-                            | Client:
-                            strong
-                              a(href='http://startbootstrap.com') Start Bootstrap
-                          li
-                            | Date:
-                            strong
-                              a(href='http://startbootstrap.com') April 2014
-                          li
-                            | Service:
-                            strong
-                              a(href='http://startbootstrap.com') Web Development
-                        button.btn.btn-success(type='button', data-dismiss='modal')
-                          i.fa.fa-times
-                          |                     Close
-          #portfolioModal3.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
-            .modal-dialog(role='document')
-              .modal-content
-                .close-modal(data-dismiss='modal')
-                  .lr
-                    .rl
-                .container
-                  .row
-                    .col-lg-8.mx-auto
-                      .modal-body
-                        h2 Project Title
-                        hr.star-primary
-                        img.img-fluid.img-centered(src='img/portfolio/circus.png', alt='')
-                        p
-                          | Use this area of the page to describe your project. The icon above is part of a free icon set by
-                          a(href='https://sellfy.com/p/8Q9P/jV3VZ/') Flat Icons
-                          | . On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!
-                        ul.list-inline.item-details
-                          li
-                            | Client:
-                            strong
-                              a(href='http://startbootstrap.com') Start Bootstrap
-                          li
-                            | Date:
-                            strong
-                              a(href='http://startbootstrap.com') April 2014
-                          li
-                            | Service:
-                            strong
-                              a(href='http://startbootstrap.com') Web Development
-                        button.btn.btn-success(type='button', data-dismiss='modal')
-                          i.fa.fa-times
-                          |                     Close
-          #portfolioModal4.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
-            .modal-dialog(role='document')
-              .modal-content
-                .close-modal(data-dismiss='modal')
-                  .lr
-                    .rl
-                .container
-                  .row
-                    .col-lg-8.mx-auto
-                      .modal-body
-                        h2 Project Title
-                        hr.star-primary
-                        img.img-fluid.img-centered(src='img/portfolio/game.png', alt='')
-                        p
-                          | Use this area of the page to describe your project. The icon above is part of a free icon set by
-                          a(href='https://sellfy.com/p/8Q9P/jV3VZ/') Flat Icons
-                          | . On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!
-                        ul.list-inline.item-details
-                          li
-                            | Client:
-                            strong
-                              a(href='http://startbootstrap.com') Start Bootstrap
-                          li
-                            | Date:
-                            strong
-                              a(href='http://startbootstrap.com') April 2014
-                          li
-                            | Service:
-                            strong
-                              a(href='http://startbootstrap.com') Web Development
-                        button.btn.btn-success(type='button', data-dismiss='modal')
-                          i.fa.fa-times
-                          |                     Close
-          #portfolioModal5.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
-            .modal-dialog(role='document')
-              .modal-content
-                .close-modal(data-dismiss='modal')
-                  .lr
-                    .rl
-                .container
-                  .row
-                    .col-lg-8.mx-auto
-                      .modal-body
-                        h2 Project Title
-                        hr.star-primary
-                        img.img-fluid.img-centered(src='img/portfolio/safe.png', alt='')
-                        p
-                          | Use this area of the page to describe your project. The icon above is part of a free icon set by
-                          a(href='https://sellfy.com/p/8Q9P/jV3VZ/') Flat Icons
-                          | . On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!
-                        ul.list-inline.item-details
-                          li
-                            | Client:
-                            strong
-                              a(href='http://startbootstrap.com') Start Bootstrap
-                          li
-                            | Date:
-                            strong
-                              a(href='http://startbootstrap.com') April 2014
-                          li
-                            | Service:
-                            strong
-                              a(href='http://startbootstrap.com') Web Development
-                        button.btn.btn-success(type='button', data-dismiss='modal')
-                          i.fa.fa-times
-                          |                     Close
-          #portfolioModal6.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
-            .modal-dialog(role='document')
-              .modal-content
-                .close-modal(data-dismiss='modal')
-                  .lr
-                    .rl
-                .container
-                  .row
-                    .col-lg-8.mx-auto
-                      .modal-body
-                        h2 Project Title
-                        hr.star-primary
-                        img.img-fluid.img-centered(src='img/portfolio/submarine.png', alt='')
-                        p
-                          | Use this area of the page to describe your project. The icon above is part of a free icon set by
-                          a(href='https://sellfy.com/p/8Q9P/jV3VZ/') Flat Icons
-                          | . On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!
-                        ul.list-inline.item-details
-                          li
-                            | Client:
-                            strong
-                              a(href='http://startbootstrap.com') Start Bootstrap
-                          li
-                            | Date:
-                            strong
-                              a(href='http://startbootstrap.com') April 2014
-                          li
-                            | Service:
-                            strong
-                              a(href='http://startbootstrap.com') Web Development
-                        button.btn.btn-success(type='button', data-dismiss='modal')
-                          i.fa.fa-times
-                          |                     Close
           // Bootstrap core JavaScript
-          script(src='vendor/jquery/jquery.min.js')
-          script(src='vendor/popper/popper.min.js')
-          script(src='vendor/bootstrap/js/bootstrap.min.js')
+          script(src='javascripts/jquery.min.js')
+          script(src='javascriptsvendor/popper/popper.min.js')
+          script(src='javascripts/bootstrap.min.js')
           // Plugin JavaScript
-          script(src='vendor/jquery-easing/jquery.easing.min.js')
+          script(src='javascripts/jquery.easing.min.js')
           // Contact Form JavaScript
-          script(src='js/jqBootstrapValidation.js')
-          script(src='js/contact_me.js')
+          script(src='javascripts/jqBootstrapValidation.js')
+          script(src='javascripts/contact_me.js')
           // Custom scripts for this template
-          script(src='js/freelancer.min.js')
+          script(src='javascripts/freelancer.min.js')

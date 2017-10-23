@@ -16,11 +16,14 @@ router.get('/', function(req, res, next) {
 
   connection.query('SELECT * FROM projects', function(err, rows, fields){
     if (err) throw err;
-    res.render('index',{
-  "rows" : rows
+    res.render('dashboard',{
+  "rows" : rows,
+  layout: 'layout2'
 });
 });
   // res.render('index', { title: 'Express' });
 });
-
+router.get('/new', function(req, res, next){
+  res.render('new');
+});
 module.exports = router;
